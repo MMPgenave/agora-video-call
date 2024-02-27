@@ -4,7 +4,7 @@ import { VideoPlayer } from "./VideoPlayer";
 
 const APP_ID = "f95c1defe4ad4fa7a230e8164a3153e6";
 const TOKEN =
-  "007eJxSYKiSkQlLYp/wY/LK1Ztefk69PXf6QeFXTaXbzj3cdJFbXfSoAkOapWmyYUpqWqpJYopJWqJ5opGxQaqFoZlJorGhqXGq2Yp1d1IbAhkZrt8LYGVkYGRgYWBkAPGZwCQzmGSBiqTnMzAAAgAA//9R+iSM";
+  "007eJxSYNicPfXkn7OLqr+GK3HtNhCuWLbstn7rh0DF+HcTxdLX9NxUYEizNE02TElNSzVJTDFJSzRPNDI2SLUwNDNJNDY0NU41E+O/l+rAy8ywIW4mCyMDIwMLAyMDiM8EJpnBJAtUJD2fgQEQAAD//6uPH+I=";
 const CHANNEL = "go";
 const APP_CERTIFICATE = "bc3225d59c2d4d3e884365e3757ff1c5";
 
@@ -133,10 +133,11 @@ export const VideoRoom = () => {
         <div
           style={{
             display: "grid",
-            gridTemplateColumns: "repeat(2, 200px)",
+            gridTemplateColumns: "repeat(1, 200px)",
             gap: "1rem",
           }}
         >
+          <div className={{ borderRadius: "20px" }}></div>
           {users.map((user) => (
             <VideoPlayer key={user.uid} user={user} />
           ))}
